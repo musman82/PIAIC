@@ -9,7 +9,7 @@ function printSum(n: number){
     }
     console.log("Sum of ", n ," even numbers is:" , sum);
 }
-console.log(printSum(5));
+printSum(5);
 
 //  Q#2 - Implement a program that uses a for loop to iterate through an array of numbers and print only the even numbers.
 
@@ -27,11 +27,9 @@ printEvenNumbers([1,3,5,7,4,6,5,2,8,9]);
 //        from them and just leave the odd ones
 
 function removeEvenNumbers(array: number[]){
-    var count:number = array.length;
-    for(var i = 0; i < count; i++){
+        for(var i = 0; i < array.length; i++){
         if(array[i]%2==0){
             array.splice(i,1);
-            count--;
             i--;
         }
     }
@@ -53,12 +51,9 @@ console.log("Area of a Circle with Radius ", 10, " is : ",calculateArea(10));
 //        from the array.
 
 function removeFailingGrades(array:number[]){
-    var count = array.length;
-
-    for(var i = 0; i < count; i++){
+    for(var i = 0; i < array.length; i++){
         if(array[i] < 50){
             array.splice(i,1);
-            count--;
             i--;
         }
     }

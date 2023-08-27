@@ -9,7 +9,7 @@ function printSum(n) {
     }
     console.log("Sum of ", n, " even numbers is:", sum);
 }
-console.log(printSum(5));
+printSum(5);
 //  Q#2 - Implement a program that uses a for loop to iterate through an array of numbers and print only the even numbers.
 function printEvenNumbers(array) {
     for (var i = 0; i < array.length; i++) {
@@ -22,11 +22,9 @@ printEvenNumbers([1, 3, 5, 7, 4, 6, 5, 2, 8, 9]);
 //  Q#3 - Implement a program that uses a loop to iterate through an array of numbers and remove all the even numbers 
 //        from them and just leave the odd ones
 function removeEvenNumbers(array) {
-    var count = array.length;
-    for (var i = 0; i < count; i++) {
+    for (var i = 0; i < array.length; i++) {
         if (array[i] % 2 == 0) {
             array.splice(i, 1);
-            count--;
             i--;
         }
     }
@@ -43,11 +41,9 @@ console.log("Area of a Circle with Radius ", 10, " is : ", calculateArea(10));
 //  Q#5 - Develop a program that reads a list of grades and uses the splice method to remove failing grades (below 50) 
 //        from the array.
 function removeFailingGrades(array) {
-    var count = array.length;
-    for (var i = 0; i < count; i++) {
+    for (var i = 0; i < array.length; i++) {
         if (array[i] < 50) {
             array.splice(i, 1);
-            count--;
             i--;
         }
     }

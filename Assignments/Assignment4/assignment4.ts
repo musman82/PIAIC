@@ -96,13 +96,20 @@ console.log("Name without whitespaces : ",varStrippingName1.trim());
 
 // 10. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
 let arrNames: string[] = ["Muhamamd", "Usman", "Rasheed", "Hassan"];
-console.log(arrNames[0]);
-console.log(arrNames[1]);
-console.log(arrNames[2]);
-console.log(arrNames[3]);
+
+console.log("Question # 11 Output");
+console.log("Original array : " ,arrNames);
+
+console.log("First Element in array : " ,arrNames[0]);
+console.log("Second Element in array : " ,arrNames[1]);
+console.log("Third Element in array : " ,arrNames[2]);
+console.log("Fourth Element in array : " ,arrNames[3]);
 
 // 11. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
+
 let arrNames1: string[] = ["Muhamamd", "Usman", "Rasheed", "Hassan"];
+console.log("Question # 12 Output");
+console.log("Original Array : ",arrNames1);
 console.log(`Hello ${arrNames1[0]}, How are you?`);
 console.log(`Hello ${arrNames1[1]}, How are you?`);
 console.log(`Hello ${arrNames1[2]}, How are you?`);
@@ -110,6 +117,8 @@ console.log(`Hello ${arrNames1[3]}, How are you?`);
 
 // 12. Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
 let cars: string[] = ["Toyota", "Honda", "BMW", "Tesla"];
+console.log("Question # 13 Output");
+console.log("Original Array : ",cars);
 console.log(`I have a ${cars[0]} car.`);
 console.log(`${cars[1]} cars are very expensive.`); 
 console.log(`I dream to have a ${cars[2]} car.`); 
@@ -118,6 +127,8 @@ console.log(`${cars[3]} is the next generation car.`);
 // 13. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
 let arrGuests: string[] = ["Muhammad", "Usman", "Rasheed","Hassan"];
 
+console.log("Question # 14 Output");
+console.log("Original Array : ",arrGuests);
 for (let i = 0; i < arrGuests.length; i++) {
   console.log(`Dear ${arrGuests[i]}, I would like to invite you to dinner at my place.`)
 }
@@ -125,6 +136,8 @@ for (let i = 0; i < arrGuests.length; i++) {
 // 14. Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
 
 let arrGuests1: string[] = ["Muhammad", "Usman", "Rasheed","Hassan"];
+
+console.log("Question # 15 Output");
 
 for (let i = 0; i < arrGuests1.length; i++) {
   console.log(`Dear ${arrGuests1[i]}, I would like to invite you to dinner at my place.`)
@@ -137,6 +150,8 @@ for (let i = 0; i < arrGuests1.length; i++) {
 
 // 15. More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
 let arrGuests2: string[] = ["Muhammad", "Usman", "Rasheed","Hassan"];
+
+console.log("Question # 16 Output");
 
 for (let i = 0; i < arrGuests2.length; i++) {
   console.log(`Dear ${arrGuests2[i]}, I would like to invite you to dinner at my place.`)
@@ -157,6 +172,7 @@ for (let i = 0; i < arrGuests2.length; i++) {
 // 16. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
 let arrGuests3: string[] = ["Muhammad", "Usman", "Rasheed","Hassan"];
 
+console.log("Question # 17 Output");
 for (let i = 0; i < arrGuests3.length; i++) {
   console.log(`Dear ${arrGuests3[i]}, I would like to invite you to dinner at my place.`)
 }
@@ -193,37 +209,43 @@ console.log(arrGuests3);
     // • Store the locations in a array. Make sure the array is not in alphabetical order.
     let arrPlaces: string[] = ["Lahore", "Karachi", "Peshawar", "Quetta", "Faisalabad"];
 
+    console.log("Question # 18 Output");
     // • Print your array in its original order.
-    console.log(arrPlaces);
+    console.log("Array in Original Order : ",arrPlaces);
 
     // • Print your array in alphabetical order without modifying the actual list.
-    console.log(arrPlaces.slice().sort());
+    console.log("Array in Alphabatical Order (Without modifying origianl array) : ",arrPlaces.slice().sort());
 
     // • Show that your array is still in its original order by printing it.
-    console.log(arrPlaces); 
+    console.log("Array in Original Order : ",arrPlaces); 
 
     // • Print your array in reverse alphabetical order without changing the order of the original list.
-    console.log(arrPlaces.slice().sort().reverse());
+    console.log("Array in Reverse Alphabatical Order (Without modifying origianl array) : ",arrPlaces.slice().sort().reverse());
 
     // • Show that your array is still in its original order by printing it again.
-    console.log(arrPlaces);
+    console.log("Array in Original Order : ",arrPlaces); 
 
     // • Reverse the order of your list. Print the array to show that its order has changed.
     arrPlaces.reverse();
-    console.log(arrPlaces);
+    console.log("Original Array in Reverse Alphabatical Order :", arrPlaces);
 
     // • Reverse the order of your list again. Print the list to show it’s back to its original order.
     arrPlaces.reverse();
-    console.log(arrPlaces);
+    console.log("Array in Original Order",arrPlaces);
+
     // • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
     arrPlaces.sort();
-    console.log(arrPlaces); 
+    console.log("Original Array in Alphabatical sorting order",arrPlaces); 
     // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
     arrPlaces.sort().reverse();
-    console.log(arrPlaces);
+    console.log("Original Array in Reverse Alphabatical sorting order",arrPlaces); 
 
 // 18. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
 let arrGuests4: string[] = ["Muhammad", "Usman", "Rasheed","Hassan"];
+
+console.log("Question # 19 Output");
+
+console.log("Origial Guest List: ",arrGuests4);
 
 for (let i = 0; i < arrGuests4.length; i++) {
   console.log(`Dear ${arrGuests4[i]}, I would like to invite you to dinner at my place.`)
@@ -232,8 +254,13 @@ console.log(`We have invited ${arrGuests4.length} people to dinner.`);
 
 // 19. Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
 
+console.log("Question # 20 Output");
+
 let arrCountries: string[] = ["Amarica", "Brazil", "France", "China", "UAE", "Pakistan"];
-console.log(arrCountries); 
+console.log("List of countries: ")
+for(var i = 0 ; i < arrCountries.length; i++) {
+  console.log(i+1, " - " ,arrCountries[i]);
+}
 
 // 20. They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
 let objStudent: {name: string, age: number, rollNumber: string} = {

@@ -200,11 +200,13 @@ let objStudent = {
     age: 41,
     rollNumber: " PIAIC78068"
 };
-console.log(objStudent);
+console.log("Question # 21 Output");
+console.log("Student Object Output : ", objStudent);
 // 21. Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
 let arrGuests5 = ["Muhammad", "Usman", "Rasheed", "Hassan"];
 //console.log(arrGuests5[4]); // Error Message: Undefined
 // 22. Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+console.log("Question # 23 Output");
 // Declare a variable for varCar
 let varCar = "subaru";
 // i. Test if varCar is equal to "subaru"
@@ -239,42 +241,46 @@ console.log("Is typeof(varCar) == 'number'? I predict false.");
 console.log(typeof (varCar) == "number");
 // 23. More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
 // Tests for equality and inequality with strings
+console.log("Question # 24 Output");
 let varCar2 = "subaru";
-console.log(varCar2 == "subaru");
-console.log(varCar2 == "toyota");
-console.log(varCar2 != "Subaru");
-console.log(varCar2 != "Toyota");
-console.log(varCar2.toLowerCase() == "subaru");
-console.log(varCar2.toLowerCase() == "SUBARU");
+console.log("Equality test :- (subaru == subaru) :", varCar2 == "subaru");
+console.log("Equality test :- (subaru == toyota) :", varCar2 == "toyota");
+console.log("InEquality test :- (Subaru != Subaru) :", varCar2 != "Subaru");
+console.log("InEquality test :- (subaru != Toyota) :", varCar2 != "Toyota");
+console.log("Equality test :- lowercase (subaru==subaru): ", varCar2.toLowerCase() == "subaru");
+console.log("Equality test :- uppercase (subaru==SUBARU): ", varCar2.toLowerCase() == "SUBARU");
 // Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
 let varCar2Length = varCar2.length;
-console.log(varCar2Length == 6);
-console.log(varCar2Length == 10);
-console.log(varCar2Length != 6);
-console.log(varCar2Length != 10);
-console.log(varCar2Length > 6);
-console.log(varCar2Length > 20);
-console.log(varCar2Length < 6);
-console.log(varCar2Length < 10);
-console.log(varCar2Length >= 6);
-console.log(varCar2Length >= 10);
-console.log(varCar2Length <= 6);
-console.log(varCar2Length <= 20);
+console.log("Equality test :- length of subaru == 6 : ", varCar2Length == 6);
+console.log("Equality test :- length of subaru == 10 : ", varCar2Length == 10);
+console.log("InEquality test :- length of subaru != 6 : ", varCar2Length != 6);
+console.log("InEquality test :- length of subaru != 10 : ", varCar2Length != 10);
+console.log("Greater than test :- length of subaru > 6 : ", varCar2Length > 6);
+console.log("Greater than test :- length of subaru > 20 : ", varCar2Length > 20);
+console.log("Less than test :- length of subaru < 6> : ", varCar2Length < 6);
+console.log("Less than test :- length of subaru < 10 : ", varCar2Length < 10);
+console.log("Greater than or equal to test :- length of subaru >= 6 : ", varCar2Length >= 6);
+console.log("Greater than or equal to test :- length of subaru >= 10 : ", varCar2Length >= 10);
+console.log("Less than or equal to test :- length of subaru <= 6 : ", varCar2Length <= 6);
+console.log("Less than or equal to test :- length of subaru <= 20 : ", varCar2Length <= 20);
 // Tests using "and" and "or" operators
-console.log(varCar2Length > 5 && varCar2Length < 10);
-console.log(varCar2Length > 9 && varCar2Length < 10);
-console.log(varCar2Length > 5 || varCar2Length < 10);
-console.log(varCar2Length > 9 || varCar2Length < 6);
+console.log("And test :- length of subaru > 5 and < 10 : ", varCar2Length > 5 && varCar2Length < 10);
+console.log("And test :- length of subaru > 9 and < 10 : ", varCar2Length > 9 && varCar2Length < 10);
+console.log("Or test :- length of subaru > 5 or < 10 : ", varCar2Length > 5 || varCar2Length < 10);
+console.log("And test :- length of subaru > 9 or < 10 : ", varCar2Length > 9 || varCar2Length < 6);
 // Test whether an item is in a array
 let arrColors = ["red", "green", "blue"];
-console.log(arrColors.includes("red"));
-console.log(arrColors.includes("yellow"));
+console.log("Original Array :", arrColors);
+console.log("Check if red is an array element : ", arrColors.includes("red"));
+console.log("Check if yellow is an array element : ", arrColors.includes("yellow"));
 // Test whether an item is not in a array
 let arrFruits = ["apple", "banana", "orange"];
-console.log(!arrFruits.includes("grape"));
-console.log(!arrFruits.includes("banana"));
+console.log("Original Array:", arrFruits);
+console.log("Check if grapes is not an array element : ", !arrFruits.includes("grape"));
+console.log("Check if banana is not an array element : ", !arrFruits.includes("banana"));
 // 24. Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
 // • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
+console.log("Question # 25 Output: (IF Statements)");
 let alien_color = "green";
 if (alien_color == "green") {
     console.log("You just earned 5 points!");
@@ -287,6 +293,7 @@ if (alien_color1 == "green") {
 // 25. Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
 // Program to execute the if part of the if-else statement
 let alienColor2 = "green";
+console.log("Question # 26 Output: (IF ELSE Statements)");
 if (alienColor2 === "green") {
     console.log("You just earned 5 points for shooting the alien.");
 }
@@ -302,7 +309,10 @@ else {
     console.log("You just earned 10 points for shooting the alien.");
 }
 // 26. Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+console.log("Question # 27 Output: (IF ELSE Statements)");
 // i. If the alien is green, print a message that the player earned 5 points.
+// ii. If the alien is yellow, print a message that the player earned 10 points.
+// iii. If the alien is red, print a message that the player earned 15 points.
 let alienColor4 = "green";
 if (alienColor4 === "green") {
     console.log("You earned 5 points.");
@@ -316,35 +326,8 @@ else if (alienColor4 === "red") {
 else {
     console.log("Invalid color.");
 }
-// ii. If the alien is yellow, print a message that the player earned 10 points.
-let alienColor5 = "yellow";
-if (alienColor5 === "green") {
-    console.log("You earned 5 points.");
-}
-else if (alienColor5 === "yellow") {
-    console.log("You earned 10 points.");
-}
-else if (alienColor5 === "red") {
-    console.log("You earned 15 points.");
-}
-else {
-    console.log("Invalid color.");
-}
-// iii. If the alien is red, print a message that the player earned 15 points.
-let alienColor6 = "yellow";
-if (alienColor6 === "green") {
-    console.log("You earned 5 points.");
-}
-else if (alienColor6 === "yellow") {
-    console.log("You earned 10 points.");
-}
-else if (alienColor6 === "red") {
-    console.log("You earned 15 points.");
-}
-else {
-    console.log("Invalid color.");
-}
 // 27. Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
+console.log("Question # 28 Output: (IF ELSE Statements)");
 let age = 25;
 if (age < 2) {
     console.log("The person is a baby.");
@@ -366,6 +349,7 @@ else {
 }
 // 28. Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
 let favorite_fruits = ["apple", "mango", "banana"];
+console.log("Question # 29 Output: (IF Statements)");
 if (favorite_fruits.includes("apple")) {
     console.log("You really like apples!");
 }
@@ -383,6 +367,7 @@ if (favorite_fruits.includes("banana")) {
 }
 // 29. Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
 let arrUserNames = ["admin", "usman", "rasheed", "hassan", "bilal"];
+console.log("Question # 30 Output: (IF ELSE Statements)");
 for (let userName of arrUserNames) {
     if (userName == "admin") {
         console.log("Hello admin, would you like to see a status report?");

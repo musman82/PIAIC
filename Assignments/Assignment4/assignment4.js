@@ -378,6 +378,7 @@ for (let userName of arrUserNames) {
 }
 // 30. No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
 let arrUserNames1 = ["admin", "usman", "rasheed", "hassan", "bilal"];
+console.log("Question # 31 Output: (IF ELSE Statements with For Loop)");
 if (arrUserNames1.length === 0) {
     console.log("We need to find some users!");
 }
@@ -393,6 +394,7 @@ else {
 }
 // 31. Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
 let current_users = ["muhammad", "usman", "rasheed", "hassan", "ali"];
+console.log("Question # 32 Output: (Checking Unique Username)");
 let new_users = ["basit", "bilal", "FARHAN", "momin", "ALI"];
 for (let new_user of new_users) {
     let lower_new_user = new_user.toLowerCase();
@@ -405,6 +407,7 @@ for (let new_user of new_users) {
 }
 // 32. Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
 let arrNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log("Question # 33 Output: (Postion of Ordinals)");
 for (let number of arrNumbers) {
     if (number === 1) {
         console.log("1st");
@@ -421,22 +424,26 @@ for (let number of arrNumbers) {
 }
 // 33. Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
 let pizzas = ["pepperoni", "cheese", "mushroom"];
+console.log("Question # 34 Output: (For Loop): ");
 for (let pizza of pizzas) {
     console.log(`I like ${pizza} pizza.`);
 }
 console.log("I really love pizza!");
 // 34. Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal. • Modify your program to print a statement about each animal, such as A dog would make a great pet. • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
 let animals = ["dog", "cat", "rabbit"];
+console.log("Question # 35 Output: (For Loop): ");
 for (let animal of animals) {
     console.log(`A ${animal} would make a great pet.`);
 }
 console.log("Any of these animals would make a great pet!");
 // 35. T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
+console.log("Question # 36 Output: (Fucntions): ");
 function make_shirt(size, message) {
     console.log(`The shirt is size ${size} and has the message "${message}" on it.`);
 }
 make_shirt("M", "I LOVE Pakistan.");
 // 36. Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
+console.log("Question # 37 Output: (Functions with default parameters): ");
 function make_shirt1(size = "L", message = "I love TypeScript.") {
     console.log(`The shirt is size ${size} and has the message "${message}" on it.`);
 }
@@ -444,6 +451,7 @@ make_shirt1();
 make_shirt1("M");
 make_shirt1("S", "I Love PIAIC");
 // 37. Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+console.log("Question # 38 Output: (Functions with default parameters): ");
 function describe_city(city, country = "Pakistan") {
     console.log(`${city} is in ${country}.`);
 }
@@ -451,6 +459,7 @@ describe_city("Karachi");
 describe_city("Lahore");
 describe_city("New York", "USA");
 // 38. City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
+console.log("Question # 39 Output: (Functions with return): ");
 function city_country(city, country) {
     return `${city}, ${country}`;
 }
@@ -458,6 +467,7 @@ console.log(city_country("Karachi", "Pakistan")); //"Karachi, Pakistan"
 console.log(city_country("Lahore", "Pakistan")); //"Lahore, Pakistan" 
 console.log(city_country("Bostan", "USA")); //"Bostan,USA"
 // 39. Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
+console.log("Question # 34 Output: (Objects and Functions with optional parameters): ");
 function make_album(artist, title, tracks) {
     var album = {
         artist: artist,
@@ -481,6 +491,7 @@ let album4 = make_album("Adele", "21", 11);
 console.log(album4);
 // 40. Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
 let arrMagicians = ["David Copperfield", "Harry Houdini", "Penn and Teller"];
+console.log("Question # 41 Output: (Array as function parameters): ");
 function show_magicians(magicians) {
     for (let magician of magicians) {
         console.log(magician);
@@ -488,6 +499,7 @@ function show_magicians(magicians) {
 }
 show_magicians(arrMagicians);
 // 41. Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
+console.log("Question # 42 Output: (Fuctions and Arrays): ");
 let arrMagicians1 = ["David Copperfield", "Harry Houdini", "Penn and Teller"];
 function show_magicians1(magicians) {
     for (let magician of magicians) {
@@ -503,6 +515,7 @@ make_great(arrMagicians1);
 show_magicians1(arrMagicians1);
 show_magicians(arrMagicians);
 // 42. Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
+console.log("Question # 43 Output: (Fuctions and Arrays): ");
 let arrMagicians2 = ["David Copperfield", "Harry Houdini", "Penn and Teller"];
 function show_magicians2(magicians) {
     for (let magician of magicians) {
@@ -519,6 +532,7 @@ let great_magicians = make_great2([...arrMagicians2]);
 show_magicians2(arrMagicians2);
 show_magicians2(great_magicians);
 // 43. Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
+console.log("Question # 44 Output: (Fuctions and Arrays): ");
 function make_sandwich(...items) {
     console.log(`You ordered a sandwich with ${items.join(", ")}.`);
 }
@@ -526,6 +540,7 @@ make_sandwich("cheese", "ham", "lettuce");
 make_sandwich("peanut butter", "jam");
 make_sandwich("turkey", "bacon", "tomato", "mayo");
 // 44. Cars: Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly.
+console.log("Question # 42 Output: (Fuctions and Objects): ");
 function make_car(manufacturer, model, ...options) {
     var car = {
         manufacturer: manufacturer,

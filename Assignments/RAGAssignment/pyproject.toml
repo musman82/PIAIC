@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ragassignment"
+version = "0.1.0"
+description = "RAG Assignment"
+authors = ["Muhammad Usman <mehr.usman@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1.0.1"
+langchain-core = "^0.2.36"
+langchain-community = "^0.2.14"
+langchain-google-genai = "^1.0.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

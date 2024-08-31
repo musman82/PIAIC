@@ -1,30 +1,21 @@
-class Shape {
-    constructor(_height, _width) {
-        this.height = 0;
-        this.width = 0;
-        this.height = _height;
-        this.width = _width;
+class a {
+    constructor() {
+        this.name = "Muhammad Usman";
     }
-    ;
-    CalculateArea() {
-        return (this.height * this.width);
+    showName() {
+        console.log(this.name);
     }
     ;
 }
-class Cube extends Shape {
-    constructor(_height, _width, _length) {
-        super(_height, _width);
-        this.lenght = 0;
-        // this.height = _height;
-        // this.width = _width;
-        this.lenght = _length;
+class b extends a {
+    constructor() {
+        super(...arguments);
+        this.age = 10;
     }
-    ;
-    CalculateArea() {
-        return (this.height * this.width * this.lenght);
+    display() {
+        console.log(this.name);
     }
-    ;
 }
-let cube = new Cube(10, 10, 10);
-console.log(cube.CalculateArea());
+let abs = new b();
+const mnm;
 export {};
